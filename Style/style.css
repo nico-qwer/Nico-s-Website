@@ -1,0 +1,103 @@
+body {
+    margin: 0;
+    font-family: Arial;
+}
+
+.main {
+    margin-top: 60px;
+    /* Add a top margin to avoid content overlay */
+    margin-left: 10px;
+    margin-right: 10px;
+    min-height: calc(100vh - 50px);
+    display: flex;
+}
+
+.floatRight {
+    float: right;
+    margin-left: 20px
+}
+
+.imageBox {
+    display: inline-block;
+}
+
+.textCentered {
+    text-align: center;
+}
+
+.main img {
+    width: 100%;
+}
+
+
+/*===================== Header style =====================*/
+
+.navbar {
+    overflow: hidden;
+    background-color: rgb(50, 50, 50);
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.navbar a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.navbar a:hover {
+    background: #ddd;
+    color: rgb(50, 50, 50);
+    transition: 0.2s ease-in-out;
+}
+
+.icon {
+    margin: -5px;
+    height: 32.5px;
+    border: 0;
+    float: left;
+    margin-right: 0px
+}
+
+
+/*===================== Footer style =====================*/
+
+.botBar {
+    overflow: hidden;
+    background-color: rgb(50, 50, 50);
+    top: 0;
+    width: 100%;
+}
+
+.botBar span {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 24px 30px;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.botBar a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 24px 30px;
+    text-decoration: none;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.botBar a:hover {
+    background: #ddd;
+    color: rgb(50, 50, 50);
+    transition: 0.2s ease-in-out;
+}
