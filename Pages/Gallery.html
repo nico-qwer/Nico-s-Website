@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nico's website:Gallery</title>
     <link rel="stylesheet" href="../Style/style.css">
+    <link rel="stylesheet" href="../Style/GalleryStyle.css">
 
     <!--Load premade sections-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -16,6 +17,7 @@
             $("#footerDiv").load("../Pages/Footer.html");
         });
     </script>
+
 </head>
 
 <body>
@@ -23,20 +25,26 @@
 
     <div class="main">
 
-        <figure class="imagebox">
-            <img src="https://i.redd.it/l9m7r3bfaqb81.png" alt="donut in blender">
-            <figcaption class="textCentered"> Donut in blender </figcaption>
-        </figure>
+        <div class="ImagesContainer">
 
-        <figure class="imagebox">
-            <img src="https://preview.redd.it/z8bgvgd8i8g81.jpg?width=1920&format=pjpg&auto=webp&s=513ab15ffbcdb08d3bf2ae7f7999595c2b6af04f" alt="VTOL in ksp">
-            <figcaption class="textCentered"> VTOL in Kerbal Space Program </figcaption>
-        </figure>
+            <figure class="imagebox">
+                <img src="https://i.redd.it/l9m7r3bfaqb81.png" alt="donut in blender">
+                <figcaption class="textCentered"> Donut in blender </figcaption>
+            </figure>
 
-        <figure class="imagebox">
-            <img src="https://i.redd.it/uvvxm30i5be81.png" alt="Museum in blender">
-            <figcaption class="textCentered"> Museum in Blender </figcaption>
-        </figure>
+            <figure class="imagebox">
+                <img src="https://preview.redd.it/z8bgvgd8i8g81.jpg?width=1920&format=pjpg&auto=webp&s=513ab15ffbcdb08d3bf2ae7f7999595c2b6af04f" alt="VTOL in ksp">
+                <figcaption class="textCentered"> VTOL in Kerbal Space Program </figcaption>
+            </figure>
+
+            <figure class="imagebox">
+                <img src="https://i.redd.it/uvvxm30i5be81.png" alt="Museum in blender">
+                <figcaption class="textCentered"> Museum in Blender </figcaption>
+            </figure>
+
+        </div>
+
+
     </div>
 
     <div id="footerDiv"></div>

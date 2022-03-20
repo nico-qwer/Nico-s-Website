@@ -9,7 +9,6 @@ body {
     margin-left: 10px;
     margin-right: 10px;
     min-height: calc(100vh - 50px);
-    display: flex;
 }
 
 .floatRight {
@@ -17,16 +16,36 @@ body {
     margin-left: 20px
 }
 
-.imageBox {
-    display: inline-block;
-}
-
 .textCentered {
     text-align: center;
 }
 
-.main img {
-    width: 100%;
+.linkimage {
+    vertical-align: middle;
+    height: 30px;
+}
+
+.linktext {
+    vertical-align: middle;
+    height: 30px;
+    color: black;
+    font-weight: bold;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+a:active {
+    text-decoration: none;
 }
 
 
