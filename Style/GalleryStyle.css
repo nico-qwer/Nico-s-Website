@@ -1,0 +1,17 @@
+.ImagesContainer {
+    display: flex;
+    flex-wrap: wrap;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: .25rem;
+    margin-top: 1rem;
+}
+
+.imagebox {
+    display: inline-block;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.ImagesContainer img {
+    height: 40vh;
+}
