@@ -22,10 +22,6 @@ body {
     margin-inline: auto;
 }
 
-.pageTitle {
-    text-align: center;
-}
-
 .textCentered {
     text-align: center;
 }
@@ -133,5 +129,5 @@ a:active {
 
 .botBar img {
     vertical-align: middle;
-    height: 50px;
+    height: 40px;
 }

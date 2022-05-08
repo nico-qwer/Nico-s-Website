@@ -1,19 +1,18 @@
 .ImagesContainer {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     gap: .25rem;
-    margin-top: 1rem;
     width: 100%;
 }
 
 .ImagesContainer img {
-    height: 40vh;
-    min-height: 200px;
-    margin: 5px;
+    width: 100%;
+    height: 100%;
     transition-duration: 200ms;
+}
+
+.ImagesContainer a {
+    padding: 5px;
 }
 
 .ImagesContainer img:hover {
