@@ -10,29 +10,24 @@
 <body>
     <header id="header">
         <div class="navbar">
-            <a href="/index.html"> <img class="icon" src="/Images/WebsiteIcon.png" alt="Logo" /> </a>
-
-            <a href="javascript:void(0);" class="icon" onclick="toggleHamburger()">
+            <a href="/index.html"> <img class="icon" src="/Images/WebsiteIcon.png" alt="Logo" />Home</a>
+            <a href="/Pages/About.html">About</a>
+            <a href="/Pages/Gallery.html">Gallery</a>
+            
+            <!-- <a href="javascript:void(0);" class="icon" onclick="toggleHamburger()">
                 <img src="/Images/hamburgerMenu.png" alt="≡">
-            </a>
+            </a>-->
 
             <script>
                 function toggleHamburger() {
                     var x = document.getElementById("links");
                     if (x.style.display === "block") {
-                         x.style.display = "none";
-                    } 
-                    else {
-                         x.style.display = "block";
+                        x.style.display = "none";
+                    } else {
+                        x.style.display = "block";
                     }
                 }
             </script>
-
-        </div>
-        <div id="links" class="links">
-            <a href="/index.html">Home</a>
-            <a href="/Pages/About.html">About</a>
-            <a href="/Pages/Gallery.html">Gallery</a>
         </div>
     </header>
 </body>

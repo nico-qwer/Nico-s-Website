@@ -66,12 +66,10 @@ a:active {
     justify-content: space-between;
 }
 
-.links {
-    float: right;
+.navbar #links {
     display: none;
 }
 
-.links a
 .navbar a {
     display: block;
     color: #f2f2f2;
@@ -80,7 +78,6 @@ a:active {
     text-decoration: none;
     font-size: 20px;
     cursor: pointer;
-    background-color: red;
 }
 
 .navbar a:hover {
@@ -90,8 +87,9 @@ a:active {
 
 .icon {
     margin: -5px;
-    height: 33px;
+    height: 32.5px;
     border: 0;
+    float: left;
     margin-right: 0px
 }
 
