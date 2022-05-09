@@ -87,9 +87,10 @@ a:active {
 
 .icon {
     margin: -5px;
-    height: 32.5px;
+    height: 33px;
     border: 0;
     margin-right: 0px
+    background-color: red;
 }
 
 
