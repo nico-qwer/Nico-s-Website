@@ -66,10 +66,12 @@ a:active {
     justify-content: space-between;
 }
 
-.navbar #links {
+.links {
+    float: right;
     display: none;
 }
 
+.links a
 .navbar a {
     display: block;
     color: #f2f2f2;
