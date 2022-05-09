@@ -78,6 +78,7 @@ a:active {
     text-decoration: none;
     font-size: 20px;
     cursor: pointer;
+    background-color: red;
 }
 
 .navbar a:hover {
@@ -90,7 +91,6 @@ a:active {
     height: 33px;
     border: 0;
     margin-right: 0px
-    background-color: red;
 }
 
 
