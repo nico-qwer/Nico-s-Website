@@ -11,7 +11,7 @@ body {
     border-width: 1px;
     border-bottom-style: none;
     border-color: rgb(60, 60, 60);
-    width: 90%;
+    width: 100%;
     max-width: 1000px;
     padding-top: 50px;
     padding-left: 1%;
@@ -32,7 +32,7 @@ p {
 }
 
 .AboutDescription a {
-    color: rgb(102, 179, 205);
+    color: rgb(144, 218, 243);
 }
 
 a:link {
@@ -60,6 +60,7 @@ a:active {
     position: fixed;
     top: 0;
     width: 100%;
+    height: 52px;
     z-index: 100;
     display: flex;
     align-items: center;
@@ -70,7 +71,6 @@ a:active {
 }
 
 .navbar a {
-    display: block;
     color: #f2f2f2;
     text-align: center;
     padding: 14px 20px;
@@ -92,6 +92,36 @@ a:active {
     margin-right: 0px
 }
 
+.hamburger {
+    padding: 14px 20px;
+}
+
+@media only screen and (min-width: 601px) {
+    /* show all the nav-buttons */
+    .navbar a:not(.hamburger) {
+        display: block;
+    }
+    /* hide the hamburger */
+    .hamburger {
+        display: none;
+        background-color: red;
+    }
+}
+
+
+/* if browser window is small (max-width) */
+
+@media only screen and (max-width: 600px) {
+    /* show everything with the hamburger class */
+    .hamburger {
+        display: block;
+    }
+    /* hide all the nav-buttons */
+    .navbar a:not(.hamburger) {
+        display: none;
+    }
+}
+
 
 /*===================== Footer style =====================*/
 
@@ -102,16 +132,15 @@ a:active {
     width: 100%;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: right;
     z-index: 99;
 }
 
-.botBar span {
-    float: left;
-    display: block;
+.botBar div {
+    float: right;
     color: #f2f2f2;
     text-align: center;
-    padding: 24px 30px;
+    padding: 5px 10px;
     text-decoration: none;
     font-size: 15px;
 }
