@@ -14,20 +14,28 @@
             <a href="/Pages/About.html">About</a>
             <a href="/Pages/Gallery.html">Gallery</a>
 
-            <a href="javascript:void(0);" class="hamburger" onclick="toggleHamburger()">
-                <img class="icon" src="/Images/WebsiteIcon.png" alt="Logo" />&nbsp
-            </a>
+            <button onclick="toggleHamburger()" class="hamburger" onclick="toggleHamburger()">
+                <img class="icon" src="/Images/WebsiteIcon.png" alt="Logo" />​
+            </button>
 
             <script>
+                var isOpen = false;
+
                 function toggleHamburger() {
-                    var x = document.getElementById("links");
-                    if (x.style.display === "block") {
-                        x.style.display = "none";
-                    } else {
-                        x.style.display = "block";
+                    isOpen = !isOpen
+
+                    if (isOpen == true) {
+                        document.getElementById("hamburgerLinks").className -= "invisible";
+                    } else if (isOpen == false) {
+                        document.getElementById("hamburgerLinks").classList.remove("invisible");
                     }
                 }
             </script>
+        </div>
+        <div class="hamburgerLinks invisible" , id="hamburgerLinks">
+            <a href="/index.html"> &nbspHome</a>
+            <a href="/Pages/About.html">About</a>
+            <a href="/Pages/Gallery.html">Gallery</a>
         </div>
     </header>
 </body>

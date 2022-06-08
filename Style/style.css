@@ -66,11 +66,8 @@ a:active {
     align-items: center;
 }
 
-.navbar #links {
-    display: none;
-}
-
-.navbar a {
+.navbar a,
+.hamburger {
     color: #f2f2f2;
     text-align: center;
     padding: 14px 20px;
@@ -79,7 +76,13 @@ a:active {
     cursor: pointer;
 }
 
-.navbar a:hover {
+.hamburger {
+    background-color: transparent;
+    border: 0px;
+}
+
+.navbar a:hover,
+.hamburger:hover {
     background-color: rgb(60, 60, 60);
     transition: 0.2s ease-in-out;
 }
@@ -92,8 +95,13 @@ a:active {
     margin-right: 0px
 }
 
-.hamburger {
-    padding: 14px 20px;
+.hamburgerLinks {
+    z-index: 101;
+    position: absolute;
+}
+
+.invisible {
+    display: none;
 }
 
 @media only screen and (min-width: 601px) {
